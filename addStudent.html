@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addStudent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="msg"></div>
+    <div class="main">
+        <div class="box">
+        <div class="title">
+            <i class="fa-solid fa-user-plus"></i>
+             <span>Add New Student</span>
+             <button onclick="window.location.href='admindetails.html'"><i class="fa-solid fa-xmark"></i></button>
+             </div>
+            <p>Fill in the Student details below</p>
+            </div>
+        <div class="field">
+        <label>Student Id</label>
+        <div class="inputbox">
+             <i class="fa-solid fa-id-card"></i>
+            <input type="text" placeholder="Enter Student Id" id="studentid">
+        </div>
+    </div>
+
+         <div class="field">
+        <label>Name</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Enter Student Name" id="sname">
+        </div>
+    </div>
+
+    <div class="field">
+        <label>Email</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" placeholder="Student@gmail.com" id="semail">
+        </div>
+    </div>
+
+    <div class="field">
+        <label>Phone Number</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" placeholder="Enter Phone Number" id="sphoneno">
+        </div>
+    </div>
+
+     <div class="field">
+        <label>Course</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-graduation-cap"></i>
+           <select id="scourse">
+            <option value="select">Select</option>
+            <option value="webdev">Web Development</option>
+            <option value="C++/Java">C++/Java</option>
+            <option value="Digitalmarket">Digit Marketing</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="Genai">Gen Ai</option>
+            <option value="DSA">Data Structure And Algorithm</option>
+           </select>
+        </div>
+    </div>
+
+     <div class="field">
+        <label>Course Duration</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-clock"></i>
+            <select id="sduration">
+                <option value="Select">Select</option>
+                <option value="2">2 Months</option>
+                <option value="4">4 Months</option>
+                <option value="6">6 Months</option>
+                <option value="8">8 Months</option>
+                <option value="10">10 Months</option>
+                <option value="12">12 Months</option>
+            </select>
+        </div>
+    </div>
+
+     <div class="field">
+        <label>Total fees</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-rupee-sign"></i>
+            <input type="text" placeholder="Enter the total Fees" id="sfees">
+        </div>
+    </div>
+
+    <div class="field">
+        <label>Password</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Enter Password" id="spassword">
+        </div>
+    </div>
+
+    <div class="field">
+        <label>Confirm Password</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" id="scpassword">
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="cancel" onclick="window.location.href='admindetails.html'">Cancel</button>
+        <button id="save" onclick="addStudent()">Add Student</button>
+    </div>
+    
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    background: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 4vh 0;
+}
+
+.main {
+    width: 35vw;
+    background: white;
+    border-radius: 1vw;
+    padding: 4vh 3vw;
+    box-shadow: 0 1vh 2vh rgba(0,0,0,0.15);
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+}
+.title button {
+    margin-left: auto;   
+    background: transparent;
+    border: none;
+    font-size: 1.2vw;
+    cursor: pointer;
+    color: gray;
+}
+
+.title i {
+    font-size: 1.5vw;
+    color: #2563eb;
+}
+
+.title span {
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.box p {
+    margin-top: 1vh;
+    font-size: 0.9vw;
+    color: gray;
+}
+
+.field {
+    margin-bottom: 2.5vh;
+}
+
+.field label {
+    display: block;
+    font-size: 1.2vw;
+    margin-bottom: 0.8vh;
+}
+
+.inputbox {
+    display: flex;
+    align-items: center;
+    border: 0.15vw solid #e5e7eb;
+    border-radius: 0.7vw;
+    padding: 1.2vh 1vw;
+    gap: 0.8vw;
+}
+
+.inputbox i {
+    color: gray;
+    font-size: 1vw;
+}
+
+.inputbox input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.9vw;
+}
+
+.inputbox:focus-within {
+    border-color: #2563eb;
+}
+.inputbox select {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.9vw;
+    background: transparent;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+    margin-top: 3vh;
+}
+
+#cancel {
+    background: transparent;
+    border: none;
+    font-size: 0.9vw;
+    cursor: pointer;
+    color: gray;
+}
+
+#save {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 1.2vh 2vw;
+    border-radius: 0.6vw;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+#save:hover {
+    background: #1d4ed8;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addStudent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="msg"></div>
+    <div class="main">
+        <div class="box">
+        <div class="title">
+            <i class="fa-solid fa-user-plus"></i>
+             <span>Add Notification</span>
+             <button onclick="window.location.href='admindetails.html'"><i class="fa-solid fa-xmark"></i></button>
+             </div>
+           
+            </div>
+        
+
+    <div class="field">
+        <label>Email</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" placeholder="Student@gmail.com" id="semail">
+        </div>
+    </div>
+
+    <div class="field">
+        <label>Notification Message</label>
+        <div class="inputbox">
+            <i class="fa-regular fa-message"></i>
+            <input type="text" placeholder="Enter the message" id="smessage">
+        </div>
+    </div>
+
+    <div class="field">
+        <label>Notification Type</label>
+        <div class="inputbox">
+          <select id="stype">
+            <option value="select">Select</option>
+            <option value="remainder">Fees Remainder</option>
+            <option value="notice">Exam Notice</option>
+            <option value="Schedule">Classes Schedule</option>
+          </select>
+        </div>
+    </div>
+    
+    <div class="field">
+        <label>Notification Date</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-calendar-check"></i>
+            <input type="date"  id="sdate">
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="cancel" onclick="window.location.href='admindetails.html'">Cancel</button>
+        <button id="save" onclick="addnotification()">Add Notification</button>
+    </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

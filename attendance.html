@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+    <div id="msg"></div>
+    <div id="attendancepage">
+        <div class="page-header">
+        <div>
+        <h1>Attendance Records</h1>
+        <p>View and filter all employee attendance</p>
+        </div>
+         <button class="back-btn" onclick="window.location.href='admindetails.html'">
+        Back to Dashboard
+    </button>
+    </div>
+        <div class="content">
+            <div class="card">
+                <div class="style">
+                   <i class="fa-solid fa-users"></i>
+                    <span>Total Students</span>
+                </div>
+                    <span id="totalstudents">0</span>
+                 </div>
+                   <div class="card">
+                    <div class="style">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Present Students</span>
+                </div>
+                    <span id="presentstudents">0</span>
+                  </div>
+                     <div class="card">
+                    <div class="style">
+                    <i class="fa-solid fa-user-xmark"></i>
+                    <span>Absent Students</span>
+                </div>
+                    <span id="absentstudents">0</span>
+                    </div>
+                </div>
+            <div class="filter-section">
+                 <div id="date">
+                    <label for="">Select Date</label>
+                    <input type="date" name="All Dates" id="dateinput" oninput="basedondate()">
+                 </div>
+                 <div id="byemail">
+                    <label for="">Search Name/Email</label>
+                    <input type="text" name="Search" id="searchInput" oninput="basedonemail()">
+                 </div>
+                 <div id="status">
+                    <label for="">Status</label>
+                    <select name="status" id="statusSelect" onchange="getstats()">
+                        <option value="all">All</option>
+                        <option value="Present">Present</option>
+                        <option value="Absent">Absent</option>
+                    </select>
+                 </div>
+                 <button id="filterBtn" onclick="clearFilter()">Clear Filters</button>
+            </div>
+    </div>
+    <div id="getpresent"></div>
+    <div id="getabsent"></div>
+    <div id="showattend"></div>
+    <div id="showrecord"></div>
+    <div id="editattend"></div>
+    <script src="attendance.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+.card1{
+    height: 78vh;
+    width:35vw;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    margin: 3vh auto ;
+   position: relative;
+}
+.backtologin{
+    width:13%;
+    height:45px;
+    display: flex;
+    justify-content: flex-start;
+    gap:2vh;
+    margin-left: 20vh;
+    cursor: pointer;
+    font-size: 3vh;
+    color: #4f8cff;
+    margin-top: 6vh;
+     padding: 20px;
+     text-decoration: none;
+}
+.backtologin:hover{
+    background-color: rgb(214, 212, 212);
+    border-radius: 10px;
+}
+.icon2{
+    font-size: 8vh;
+    background-color: rgb(226, 226, 248);
+    border-radius: 25px;
+    color:#5b6cff;
+    height: 100px;
+    width:18%;
+    text-align:center;
+    padding-top: 15px;
+}
+.textadmin{
+    font-size: 4vh;
+    margin: 0;
+    text-align: center;
+}
+.quote{
+    font-size: 2.8vh;
+    color: rgb(126, 126, 126);
+}
+.field{
+    width: 90%;
+    margin-top: 25px;
+}
+
+.field label{
+    font-weight: 500;
+    font-size: 25px;
+}
+.inputbox{
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.inputbox i{
+    color: #64748b;
+}
+.inputbox input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+#loginbtn{
+    height: 50px;
+    width: 600px;
+    margin-top: 30px;
+    padding: 14px;
+    
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg,#4f8cff,#5b6cff);
+    color: white;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+#loginbtn:hover{
+    opacity: .9;
+}

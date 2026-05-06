@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body {
+    background: #f5f7fb;
+}
+
+.navbar {
+    width: 100vw;
+    height: 8vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    box-shadow: 0 0.5vh 1vh rgba(0,0,0,0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo1 {
+    width: 7vw;
+}
+.logo h3 {
+    font-size: 1.2vw;
+}
+
+.logout {
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 0.6vw;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9vw;
+}
+.logout:hover {
+    background: #1d4ed8;
+}
+
+.main {
+    padding: 4vh 4vw;
+}
+.box {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    margin-bottom: 3vh;
+}
+.box button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 1.2vh 2vw;
+    border-radius: 0.6vw;
+    font-size: 0.9vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+    box-shadow: 0 0.4vh 0.8vh rgba(0,0,0,0.15);
+}
+#box2{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+#box2 button:hover{
+    background: #555;
+}
+/* #attend{
+    background-color: #ffffff;
+    border:0.5px solid rgb(181, 181, 181);
+    color: #111;
+    float: right;
+    margin-left: 20px;
+} */
+/* #attend:hover{
+    background: #555;
+} */
+
+.box button:hover {
+    background: #1d4ed8;
+}
+
+
+.title span {
+    font-size: 2.5vw;
+    font-weight: 800;
+}
+
+.title p {
+    margin-top: 1vh;
+    color: gray;
+    font-size: 1vw;
+}
+
+.content {
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.card {
+    background: white;
+    border-radius: 1vw;
+    padding: 3vh 2vw;
+    box-shadow: 0 0.5vh 1vh rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+
+
+.style {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.5vw;
+    color: #555;
+}
+
+.style i {
+    font-size: 1.6vw;
+    padding: 1vh;
+    border-radius: 50%;
+    background: #eef2ff;
+    color: #2563eb;
+}
+
+
+#totalstudents,
+#presentstudents,
+#absentstudents {
+    font-size: 2.2vw;
+    font-weight: 600;
+    text-align: center;
+}
+#studentid{
+    color:blue;
+    font-weight: 600;
+}
+.recordtitle{
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-size: 2vw;
+    font-weight: 600;
+    color: #111;
+}
+
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.employee-table th {
+    text-align: left;
+    padding: 12px;
+    background: #f3f4f6;
+    color: #444;
+    font-size: 22px;
+}
+
+.employee-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 18px;
+}
+
+.employee-table tr:hover {
+    background: #f9fafb;
+}
+
+
+.employee-table button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+    font-size: 16px;
+}
+
+
+.employee-table button:nth-child(1) {
+    background: #e0f2fe;
+}
+.employee-table button:nth-child(1):hover {
+    background: #5998ea;
+}
+
+
+.employee-table button:nth-child(2) {
+    background: #dcfce7;
+}
+.employee-table button:nth-child(2):hover {
+    background: #22c55e;
+}
+
+.employee-table button:nth-child(3){
+    background-color: rgb(249, 165, 165);
+}
+.employee-table button:nth-child(3):hover {
+    background: #e41f1f;
+}
+.employee-table button:nth-child(4) {
+    background: #e1f8dd;
+}
+.employee-table button:nth-child(4):hover {
+    background: #67f571;
+}
+.employee-table button:nth-child(5) {
+    background: #fee2e2;
+}
+.employee-table button:nth-child(5):hover {
+    background: #f87171;
+    
+}
+
+
+#editstudents{
+    height:100vh;
+    width:100vw;
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    justify-content: center;
+    align-items: center;
+}
+.editbox{
+    background-color: blue;
+    padding:20px
+}
+
+#attendanceBox{
+    height:100vh;
+    width:100vw;
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#attBox {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#attBox h2 {
+    margin-bottom: 15px;
+}
+
+
+#attBox input,
+#attBox select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+#attBox button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+#attBox button:hover {
+    background: #1d4ed8;
+} 
+
+#feesbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#feespaid{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+#feespaid h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#paidfees{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#feespaid button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+.feesinfo{
+    background:#f3f4f6;
+    padding:10px;
+    border-radius:6px;
+    margin-bottom:15px;
+}
+
+.feesinfo p{
+    margin:5px 0;
+    font-size:14px;
+}
+
+#paymentmode{
+    width:100%;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+#feespaid button:first-of-type{
+    background: #2563eb;
+    color: white;
+}
+
+#feespaid button:last-of-type{
+    background: #e5e7eb;
+}

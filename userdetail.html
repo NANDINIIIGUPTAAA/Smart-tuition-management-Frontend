@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="userdetail.css">
+</head>
+<body>
+    <div id="msg"></div>
+     <div class="navbar">
+        <div class="logo">
+         <img class="logo1" src="./images/skill_tech_point-removebg-preview.png" alt="Skill Tech Point Logo">
+         <h3>SKILLS TECH POINT</h3>
+        </div>
+        <div class="nav-right">
+        <div class="image2" id="profileimage">
+            <img src="images/profile.svg" alt="">
+        </div>
+        <div class="box4">
+            <div class="box5"></div>
+         <button class="notification" onclick="notificationpop()"><i class="fa-regular fa-bell"></i>
+        </button>
+        <div id="usercount">0</div>
+        <div class="show" id="messageshow">
+             <div class="noti-item">
+        <span class="noti-type"></span><br>
+        <span class="noti-message"></span>
+    </div>
+        </div>
+        </div>
+        <button class="logout" onclick="logoutstudent()"><i class="fa-solid fa-right-from-bracket"></i> </button>
+       
+        </div>
+    </div>
+    
+    </div>
+    <div class=popup() id="notification()"></div>
+    <div class="main">
+        <div class="styling">
+       <div class="welcomecontent">
+        <h1>Welcome, <span id="getname"></span>!</h1>
+        <span class="txt">View your profile and Attendance history</span>
+        </div>
+          <a href="changepassword.html"><button class="changepass"><span >Change Password</span></button></a>
+        </div>
+        <div class="box">
+            <div class="profile">
+                <div><i class="fa-solid fa-user"></i><span class="myprofile">My Profile</span></div>
+                <div><i class="fa-solid fa-user"></i>
+                    <div class="fullname">
+                        <span id="yourname">Full Name</span>
+                        <span id="getname1"></span>
+                    </div></div>
+
+                    <div><i class="fa-solid fa-id-card"></i>
+                    <div class="Employeid">
+                        <span id="employeeid">Student ID</span>
+                        <span id="getemployeeid"></span>
+                    </div></div>
+
+                    <div><i class="fa-solid fa-envelope"></i>
+                    <div class="Email">
+                        <span id="email">Email</span>
+                        <span id="getemail"></span>
+                    </div></div>
+            </div>
+
+        </div>
+       <div class="stats-container">
+    <div class="stat-card">
+        <h3 id="totalclasses">0</h3>
+        <p>Total Classes</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="presentclasses">0</h3>
+        <p>Present</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 id="attendancepercent">0%</h3>
+        <p>Attendance %</p>
+    </div>
+</div>
+
+<div class="attendance-section">
+
+    <div class="attendance-header">
+        <h2 id="feesHeading">Attendance Record</h2>
+    </div>
+
+    <div class="attendance-table-wrapper">
+        <div id="attendshow"></div>
+    </div>
+
+</div>
+
+    </div>
+<h2 id="feesHeading">💰 Fees Details</h2>
+  <div id="feetable"></div>
+
+<div class="summary-container">
+  <div class="summary-card">
+    <h4>Total Fee</h4>
+    <span id="totalfee">0</span>
+  </div>
+
+  <div class="summary-card">
+    <h4>Paid Fee</h4>
+    <span id="paidfee">0</span>
+  </div>
+
+  <div class="summary-card">
+    <h4>Remaining Fee</h4>
+    <span id="remainingfee">0</span>
+  </div>
+
+  <div class="summary-card">
+    <h4>Installments Left</h4>
+    <span id="durationleft">0</span>
+  </div>
+</div>
+<div id="progress-container">
+    <div id="progress-bar"></div>
+</div>
+    <script src="userdetail.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="admindetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="msg"></div>
+    <div class="navbar">
+        <div class="logo">
+         <img class="logo1" src="./images/skill_tech_point-removebg-preview.png" alt="Skill Tech Point Logo">
+         <h3>SKILLS TECH POINT</h3>
+        </div>
+        <button class="logout" onclick="logoutstudent()"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </div>
+     <div class="main">
+        <div class="box">
+        <div class="title">
+            <span>Welcome,<span id="getname"></span>!</span>
+            <p>Manage your Students and attendance records</p>
+        </div>
+        <div id="box2">
+         <button onclick="window.location.href='notification.html'"><i class="fa-regular fa-bell"></i>Send Notification</button>
+        <button onclick="window.location.href='attendance.html'" id="attend"><i class="fa-solid fa-calendar-days"></i> View Attendance</button>
+        <button onclick="window.location.href='addStudent.html'"><i class="fa-solid fa-plus"></i> Add Students</button>
+       
+       </div>
+    </div>
+        <div class="content">
+            <div class="card">
+                <div class="style">
+                   <i class="fa-solid fa-users"></i>
+                    <span>Total Students</span>
+                </div>
+                    <span id="totalstudents">0</span>
+                 </div>
+                   <div class="card">
+                    <div class="style">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Enabled Students</span>
+                </div>
+                    <span id="presentstudents">0</span>
+                  </div>
+                     <div class="card">
+                    <div class="style">
+                    <i class="fa-solid fa-user-xmark"></i>
+                    <span>Disabled Students</span>
+                </div>
+                    <span id="absentstudents">0</span>
+                    </div>
+                </div>
+              <h2 class="recordtitle">Students Records</h2>
+               <div id="showstudents"></div>
+               <div id="editstudents"></div>
+               <div id="attendanceBox"></div>
+               <div id="feesbox"></div>
+            </div>
+        
+     <script src="admin.js"></script>
+    
+</body>
+</html>

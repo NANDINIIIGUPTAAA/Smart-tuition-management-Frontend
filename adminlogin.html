@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="msg"></div>
+    <a href="dashboard.html" class="backtologin">
+        <i class="fa-solid fa-arrow-left"></i>
+         <span class="backtext">Back to Home</span>
+    </a>
+    <div class="card1">
+        <div class="icon2"><i class="fa-solid fa-circle-user"></i></div>
+        <div class="logindetail">
+        <h1 class="textadmin">Admin Login</h1>
+        <span class="quote">Access your admin dashboard</span>
+        </div>
+        <div class="field">
+        <label>Email</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" placeholder="admin@company.com" id="semail">
+        </div>
+    </div>
+        <div class="field">
+        <label>Password</label>
+        <div class="inputbox">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="••••••••" id="spassword">
+        </div>
+    </div>
+        <div>
+            <button id="loginbtn" onclick="adminlogin()">Login</button>
+        </div>
+    </div>
+    <script src="adminlogin.js"></script>
+</body>
+</html>
