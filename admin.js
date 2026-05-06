@@ -1,6 +1,6 @@
-let API="http://127.0.0.1:5000/admin"
-let API2="http://127.0.0.1:5000/fees"
-let API3="http://127.0.0.1:5000/user"
+let API="https://smart-tuition-management-backend.onrender.com/admin"
+let API2="https://smart-tuition-management-backend.onrender.com/fees"
+let API3="https://smart-tuition-management-backend.onrender.com/user"
 let showstudents1=document.getElementById("showstudents");
 
 async function load(){

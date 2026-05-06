@@ -1,4 +1,4 @@
-let API="http://127.0.0.1:5000/user"
+let API="https://smart-tuition-management-backend.onrender.com/user"
 
 async function sendOTP(){
     let email=document.getElementById("eemail").value;

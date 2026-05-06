@@ -1,5 +1,5 @@
-let API="http://127.0.0.1:5000/user"
-let API1="http://127.0.0.1:5000/admin"
+let API="https://smart-tuition-management-backend.onrender.com/user"
+let API1="https://smart-tuition-management-backend.onrender.com/admin"
 
 async function load(){
     let getname3=document.getElementById("getname");

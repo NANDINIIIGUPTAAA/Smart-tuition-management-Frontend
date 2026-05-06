@@ -1,4 +1,4 @@
-let API="http://127.0.0.1:5000/admin"
+let API="https://smart-tuition-management-backend.onrender.com/admin"
 async function adminlogin(){
     let email=document.getElementById("semail").value;
     let password=document.getElementById("spassword").value;
