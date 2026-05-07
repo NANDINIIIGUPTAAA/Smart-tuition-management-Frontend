@@ -1,4 +1,4 @@
-let API="https://smart-tuition-management-backend.onrender.com"
+let API="https://smart-tuition-management-backend.onrender.com/admin"
 let showattend1=document.getElementById("showattend");
 let showrecord1=document.getElementById("showrecord");
 
